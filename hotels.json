@@ -1,0 +1,1182 @@
+{
+  "data_type": "real_hotel_catalog",
+  "note": "Nama hotel berasal dari direktori resmi Marriott/IHG. Harga dan ketersediaan tidak dibuat-buat; sistem ini memakai harga yang diinput admin sampai API inventori nyata dihubungkan.",
+  "payment": {
+    "bank": "OCBC NISP",
+    "account_number": "940810293248",
+    "account_name": "Winda Sintia",
+    "whatsapp": "6285828781836"
+  },
+  "hotels": [
+    {
+      "id": 1,
+      "name": "The Dharmawangsa, a Luxury Collection Hotel, Jakarta",
+      "city": "Jakarta",
+      "province": "DKI Jakarta",
+      "group": "Marriott",
+      "official_url": "https://www.marriott.com/en-us/hotel-sitemap/indonesia-hotel-sitemap",
+      "image": "https://images.unsplash.com/photo-1564501049412-61c2a3083791?auto=format&fit=crop&w=1200&q=85",
+      "rooms": [
+        {
+          "id": "standard",
+          "name": "Standard Room",
+          "price_per_night": null,
+          "max_guests": 2
+        },
+        {
+          "id": "deluxe",
+          "name": "Deluxe Room",
+          "price_per_night": null,
+          "max_guests": 2
+        },
+        {
+          "id": "suite",
+          "name": "Suite",
+          "price_per_night": null,
+          "max_guests": 4
+        }
+      ],
+      "availability_note": "Harga dan ketersediaan dikonfirmasi sebelum pembayaran."
+    },
+    {
+      "id": 2,
+      "name": "JW Marriott Hotel Jakarta",
+      "city": "Jakarta",
+      "province": "DKI Jakarta",
+      "group": "Marriott",
+      "official_url": "https://www.marriott.com/en-us/hotel-sitemap/indonesia-hotel-sitemap",
+      "image": "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=1200&q=85",
+      "rooms": [
+        {
+          "id": "standard",
+          "name": "Standard Room",
+          "price_per_night": null,
+          "max_guests": 2
+        },
+        {
+          "id": "deluxe",
+          "name": "Deluxe Room",
+          "price_per_night": null,
+          "max_guests": 2
+        },
+        {
+          "id": "suite",
+          "name": "Suite",
+          "price_per_night": null,
+          "max_guests": 4
+        }
+      ],
+      "availability_note": "Harga dan ketersediaan dikonfirmasi sebelum pembayaran."
+    },
+    {
+      "id": 3,
+      "name": "JW Marriott Hotel Medan",
+      "city": "Medan",
+      "province": "Sumatera Utara",
+      "group": "Marriott",
+      "official_url": "https://www.marriott.com/en-us/hotel-sitemap/indonesia-hotel-sitemap",
+      "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1200&q=85",
+      "rooms": [
+        {
+          "id": "standard",
+          "name": "Standard Room",
+          "price_per_night": null,
+          "max_guests": 2
+        },
+        {
+          "id": "deluxe",
+          "name": "Deluxe Room",
+          "price_per_night": null,
+          "max_guests": 2
+        },
+        {
+          "id": "suite",
+          "name": "Suite",
+          "price_per_night": null,
+          "max_guests": 4
+        }
+      ],
+      "availability_note": "Harga dan ketersediaan dikonfirmasi sebelum pembayaran."
+    },
+    {
+      "id": 4,
+      "name": "JW Marriott Hotel Surabaya",
+      "city": "Surabaya",
+      "province": "Jawa Timur",
+      "group": "Marriott",
+      "official_url": "https://www.marriott.com/en-us/hotel-sitemap/indonesia-hotel-sitemap",
+      "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=85",
+      "rooms": [
+        {
+          "id": "standard",
+          "name": "Standard Room",
+          "price_per_night": null,
+          "max_guests": 2
+        },
+        {
+          "id": "deluxe",
+          "name": "Deluxe Room",
+          "price_per_night": null,
+          "max_guests": 2
+        },
+        {
+          "id": "suite",
+          "name": "Suite",
+          "price_per_night": null,
+          "max_guests": 4
+        }
+      ],
+      "availability_note": "Harga dan ketersediaan dikonfirmasi sebelum pembayaran."
+    },
+    {
+      "id": 5,
+      "name": "The St. Regis Jakarta",
+      "city": "Jakarta",
+      "province": "DKI Jakarta",
+      "group": "Marriott",
+      "official_url": "https://www.marriott.com/en-us/hotel-sitemap/indonesia-hotel-sitemap",
+      "image": "https://images.unsplash.com/photo-1601918774946-25832a4be0d6?auto=format&fit=crop&w=1200&q=85",
+      "rooms": [
+        {
+          "id": "standard",
+          "name": "Standard Room",
+          "price_per_night": null,
+          "max_guests": 2
+        },
+        {
+          "id": "deluxe",
+          "name": "Deluxe Room",
+          "price_per_night": null,
+          "max_guests": 2
+        },
+        {
+          "id": "suite",
+          "name": "Suite",
+          "price_per_night": null,
+          "max_guests": 4
+        }
+      ],
+      "availability_note": "Harga dan ketersediaan dikonfirmasi sebelum pembayaran."
+    },
+    {
+      "id": 6,
+      "name": "W Bali - Seminyak",
+      "city": "Seminyak",
+      "province": "Bali",
+      "group": "Marriott",
+      "official_url": "https://www.marriott.com/en-us/hotel-sitemap/indonesia-hotel-sitemap",
+      "image": "https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=1200&q=85",
+      "rooms": [
+        {
+          "id": "standard",
+          "name": "Standard Room",
+          "price_per_night": null,
+          "max_guests": 2
+        },
+        {
+          "id": "deluxe",
+          "name": "Deluxe Room",
+          "price_per_night": null,
+          "max_guests": 2
+        },
+        {
+          "id": "suite",
+          "name": "Suite",
+          "price_per_night": null,
+          "max_guests": 4
+        }
+      ],
+      "availability_note": "Harga dan ketersediaan dikonfirmasi sebelum pembayaran."
+    },
+    {
+      "id": 7,
+      "name": "Yogyakarta Marriott Hotel",
+      "city": "Yogyakarta",
+      "province": "DI Yogyakarta",
+      "group": "Marriott",
+      "official_url": "https://www.marriott.com/en-us/hotel-sitemap/indonesia-hotel-sitemap",
+      "image": "https://images.unsplash.com/photo-1584132967334-10e028bd69f7?auto=format&fit=crop&w=1200&q=85",
+      "rooms": [
+        {
+          "id": "standard",
+          "name": "Standard Room",
+          "price_per_night": null,
+          "max_guests": 2
+        },
+        {
+          "id": "deluxe",
+          "name": "Deluxe Room",
+          "price_per_night": null,
+          "max_guests": 2
+        },
+        {
+          "id": "suite",
+          "name": "Suite",
+          "price_per_night": null,
+          "max_guests": 4
+        }
+      ],
+      "availability_note": "Harga dan ketersediaan dikonfirmasi sebelum pembayaran."
+    },
+    {
+      "id": 8,
+      "name": "Sheraton Bandung Hotel & Towers",
+      "city": "Bandung",
+      "province": "Jawa Barat",
+      "group": "Marriott",
+      "official_url": "https://www.marriott.com/en-us/hotel-sitemap/indonesia-hotel-sitemap",
+      "image": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1200&q=85",
+      "rooms": [
+        {
+          "id": "standard",
+          "name": "Standard Room",
+          "price_per_night": null,
+          "max_guests": 2
+        },
+        {
+          "id": "deluxe",
+          "name": "Deluxe Room",
+          "price_per_night": null,
+          "max_guests": 2
+        },
+        {
+          "id": "suite",
+          "name": "Suite",
+          "price_per_night": null,
+          "max_guests": 4
+        }
+      ],
+      "availability_note": "Harga dan ketersediaan dikonfirmasi sebelum pembayaran."
+    },
+    {
+      "id": 9,
+      "name": "Sheraton Bali Kuta Resort",
+      "city": "Kuta",
+      "province": "Bali",
+      "group": "Marriott",
+      "official_url": "https://www.marriott.com/en-us/hotel-sitemap/indonesia-hotel-sitemap",
+      "image": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1200&q=85",
+      "rooms": [
+        {
+          "id": "standard",
+          "name": "Standard Room",
+          "price_per_night": null,
+          "max_guests": 2
+        },
+        {
+          "id": "deluxe",
+          "name": "Deluxe Room",
+          "price_per_night": null,
+          "max_guests": 2
+        },
+        {
+          "id": "suite",
+          "name": "Suite",
+          "price_per_night": null,
+          "max_guests": 4
+        }
+      ],
+      "availability_note": "Harga dan ketersediaan dikonfirmasi sebelum pembayaran."
+    },
+    {
+      "id": 10,
+      "name": "Sheraton Grand Jakarta Gandaria City Hotel",
+      "city": "Jakarta",
+      "province": "DKI Jakarta",
+      "group": "Marriott",
+      "official_url": "https://www.marriott.com/en-us/hotel-sitemap/indonesia-hotel-sitemap",
+      "image": "https://images.unsplash.com/photo-1564501049412-61c2a3083791?auto=format&fit=crop&w=1200&q=85",
+      "rooms": [
+        {
+          "id": "standard",
+          "name": "Standard Room",
+          "price_per_night": null,
+          "max_guests": 2
+        },
+        {
+          "id": "deluxe",
+          "name": "Deluxe Room",
+          "price_per_night": null,
+          "max_guests": 2
+        },
+        {
+          "id": "suite",
+          "name": "Suite",
+          "price_per_night": null,
+          "max_guests": 4
+        }
+      ],
+      "availability_note": "Harga dan ketersediaan dikonfirmasi sebelum pembayaran."
+    },
+    {
+      "id": 11,
+      "name": "Sheraton Jakarta Soekarno Hatta Airport",
+      "city": "Tangerang",
+      "province": "Banten",
+      "group": "Marriott",
+      "official_url": "https://www.marriott.com/en-us/hotel-sitemap/indonesia-hotel-sitemap",
+      "image": "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=1200&q=85",
+      "rooms": [
+        {
+          "id": "standard",
+          "name": "Standard Room",
+          "price_per_night": null,
+          "max_guests": 2
+        },
+        {
+          "id": "deluxe",
+          "name": "Deluxe Room",
+          "price_per_night": null,
+          "max_guests": 2
+        },
+        {
+          "id": "suite",
+          "name": "Suite",
+          "price_per_night": null,
+          "max_guests": 4
+        }
+      ],
+      "availability_note": "Harga dan ketersediaan dikonfirmasi sebelum pembayaran."
+    },
+    {
+      "id": 12,
+      "name": "Sheraton Senggigi Beach Resort",
+      "city": "Senggigi",
+      "province": "Nusa Tenggara Barat",
+      "group": "Marriott",
+      "official_url": "https://www.marriott.com/en-us/hotel-sitemap/indonesia-hotel-sitemap",
+      "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1200&q=85",
+      "rooms": [
+        {
+          "id": "standard",
+          "name": "Standard Room",
+          "price_per_night": null,
+          "max_guests": 2
+        },
+        {
+          "id": "deluxe",
+          "name": "Deluxe Room",
+          "price_per_night": null,
+          "max_guests": 2
+        },
+        {
+          "id": "suite",
+          "name": "Suite",
+          "price_per_night": null,
+          "max_guests": 4
+        }
+      ],
+      "availability_note": "Harga dan ketersediaan dikonfirmasi sebelum pembayaran."
+    },
+    {
+      "id": 13,
+      "name": "Sheraton Surabaya Hotel & Towers",
+      "city": "Surabaya",
+      "province": "Jawa Timur",
+      "group": "Marriott",
+      "official_url": "https://www.marriott.com/en-us/hotel-sitemap/indonesia-hotel-sitemap",
+      "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=85",
+      "rooms": [
+        {
+          "id": "standard",
+          "name": "Standard Room",
+          "price_per_night": null,
+          "max_guests": 2
+        },
+        {
+          "id": "deluxe",
+          "name": "Deluxe Room",
+          "price_per_night": null,
+          "max_guests": 2
+        },
+        {
+          "id": "suite",
+          "name": "Suite",
+          "price_per_night": null,
+          "max_guests": 4
+        }
+      ],
+      "availability_note": "Harga dan ketersediaan dikonfirmasi sebelum pembayaran."
+    },
+    {
+      "id": 14,
+      "name": "Grand Hotel Preanger, Bandung, a Tribute Portfolio Hotel",
+      "city": "Bandung",
+      "province": "Jawa Barat",
+      "group": "Marriott",
+      "official_url": "https://www.marriott.com/en-us/hotel-sitemap/indonesia-hotel-sitemap",
+      "image": "https://images.unsplash.com/photo-1601918774946-25832a4be0d6?auto=format&fit=crop&w=1200&q=85",
+      "rooms": [
+        {
+          "id": "standard",
+          "name": "Standard Room",
+          "price_per_night": null,
+          "max_guests": 2
+        },
+        {
+          "id": "deluxe",
+          "name": "Deluxe Room",
+          "price_per_night": null,
+          "max_guests": 2
+        },
+        {
+          "id": "suite",
+          "name": "Suite",
+          "price_per_night": null,
+          "max_guests": 4
+        }
+      ],
+      "availability_note": "Harga dan ketersediaan dikonfirmasi sebelum pembayaran."
+    },
+    {
+      "id": 15,
+      "name": "The Hermitage, a Tribute Portfolio Hotel, Jakarta",
+      "city": "Jakarta",
+      "province": "DKI Jakarta",
+      "group": "Marriott",
+      "official_url": "https://www.marriott.com/en-us/hotel-sitemap/indonesia-hotel-sitemap",
+      "image": "https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=1200&q=85",
+      "rooms": [
+        {
+          "id": "standard",
+          "name": "Standard Room",
+          "price_per_night": null,
+          "max_guests": 2
+        },
+        {
+          "id": "deluxe",
+          "name": "Deluxe Room",
+          "price_per_night": null,
+          "max_guests": 2
+        },
+        {
+          "id": "suite",
+          "name": "Suite",
+          "price_per_night": null,
+          "max_guests": 4
+        }
+      ],
+      "availability_note": "Harga dan ketersediaan dikonfirmasi sebelum pembayaran."
+    },
+    {
+      "id": 16,
+      "name": "The Westin Jakarta",
+      "city": "Jakarta",
+      "province": "DKI Jakarta",
+      "group": "Marriott",
+      "official_url": "https://www.marriott.com/en-us/hotel-sitemap/indonesia-hotel-sitemap",
+      "image": "https://images.unsplash.com/photo-1584132967334-10e028bd69f7?auto=format&fit=crop&w=1200&q=85",
+      "rooms": [
+        {
+          "id": "standard",
+          "name": "Standard Room",
+          "price_per_night": null,
+          "max_guests": 2
+        },
+        {
+          "id": "deluxe",
+          "name": "Deluxe Room",
+          "price_per_night": null,
+          "max_guests": 2
+        },
+        {
+          "id": "suite",
+          "name": "Suite",
+          "price_per_night": null,
+          "max_guests": 4
+        }
+      ],
+      "availability_note": "Harga dan ketersediaan dikonfirmasi sebelum pembayaran."
+    },
+    {
+      "id": 17,
+      "name": "The Westin Surabaya",
+      "city": "Surabaya",
+      "province": "Jawa Timur",
+      "group": "Marriott",
+      "official_url": "https://www.marriott.com/en-us/hotel-sitemap/indonesia-hotel-sitemap",
+      "image": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1200&q=85",
+      "rooms": [
+        {
+          "id": "standard",
+          "name": "Standard Room",
+          "price_per_night": null,
+          "max_guests": 2
+        },
+        {
+          "id": "deluxe",
+          "name": "Deluxe Room",
+          "price_per_night": null,
+          "max_guests": 2
+        },
+        {
+          "id": "suite",
+          "name": "Suite",
+          "price_per_night": null,
+          "max_guests": 4
+        }
+      ],
+      "availability_note": "Harga dan ketersediaan dikonfirmasi sebelum pembayaran."
+    },
+    {
+      "id": 18,
+      "name": "Four Points by Sheraton Balikpapan",
+      "city": "Balikpapan",
+      "province": "Kalimantan Timur",
+      "group": "Marriott",
+      "official_url": "https://www.marriott.com/en-us/hotel-sitemap/indonesia-hotel-sitemap",
+      "image": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1200&q=85",
+      "rooms": [
+        {
+          "id": "standard",
+          "name": "Standard Room",
+          "price_per_night": null,
+          "max_guests": 2
+        },
+        {
+          "id": "deluxe",
+          "name": "Deluxe Room",
+          "price_per_night": null,
+          "max_guests": 2
+        },
+        {
+          "id": "suite",
+          "name": "Suite",
+          "price_per_night": null,
+          "max_guests": 4
+        }
+      ],
+      "availability_note": "Harga dan ketersediaan dikonfirmasi sebelum pembayaran."
+    },
+    {
+      "id": 19,
+      "name": "Four Points by Sheraton Bandung",
+      "city": "Bandung",
+      "province": "Jawa Barat",
+      "group": "Marriott",
+      "official_url": "https://www.marriott.com/en-us/hotel-sitemap/indonesia-hotel-sitemap",
+      "image": "https://images.unsplash.com/photo-1564501049412-61c2a3083791?auto=format&fit=crop&w=1200&q=85",
+      "rooms": [
+        {
+          "id": "standard",
+          "name": "Standard Room",
+          "price_per_night": null,
+          "max_guests": 2
+        },
+        {
+          "id": "deluxe",
+          "name": "Deluxe Room",
+          "price_per_night": null,
+          "max_guests": 2
+        },
+        {
+          "id": "suite",
+          "name": "Suite",
+          "price_per_night": null,
+          "max_guests": 4
+        }
+      ],
+      "availability_note": "Harga dan ketersediaan dikonfirmasi sebelum pembayaran."
+    },
+    {
+      "id": 20,
+      "name": "Four Points by Sheraton Makassar",
+      "city": "Makassar",
+      "province": "Sulawesi Selatan",
+      "group": "Marriott",
+      "official_url": "https://www.marriott.com/en-us/hotel-sitemap/indonesia-hotel-sitemap",
+      "image": "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=1200&q=85",
+      "rooms": [
+        {
+          "id": "standard",
+          "name": "Standard Room",
+          "price_per_night": null,
+          "max_guests": 2
+        },
+        {
+          "id": "deluxe",
+          "name": "Deluxe Room",
+          "price_per_night": null,
+          "max_guests": 2
+        },
+        {
+          "id": "suite",
+          "name": "Suite",
+          "price_per_night": null,
+          "max_guests": 4
+        }
+      ],
+      "availability_note": "Harga dan ketersediaan dikonfirmasi sebelum pembayaran."
+    },
+    {
+      "id": 21,
+      "name": "Four Points by Sheraton Medan",
+      "city": "Medan",
+      "province": "Sumatera Utara",
+      "group": "Marriott",
+      "official_url": "https://www.marriott.com/en-us/hotel-sitemap/indonesia-hotel-sitemap",
+      "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1200&q=85",
+      "rooms": [
+        {
+          "id": "standard",
+          "name": "Standard Room",
+          "price_per_night": null,
+          "max_guests": 2
+        },
+        {
+          "id": "deluxe",
+          "name": "Deluxe Room",
+          "price_per_night": null,
+          "max_guests": 2
+        },
+        {
+          "id": "suite",
+          "name": "Suite",
+          "price_per_night": null,
+          "max_guests": 4
+        }
+      ],
+      "availability_note": "Harga dan ketersediaan dikonfirmasi sebelum pembayaran."
+    },
+    {
+      "id": 22,
+      "name": "Four Points by Sheraton Pontianak",
+      "city": "Pontianak",
+      "province": "Kalimantan Barat",
+      "group": "Marriott",
+      "official_url": "https://www.marriott.com/en-us/hotel-sitemap/indonesia-hotel-sitemap",
+      "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=85",
+      "rooms": [
+        {
+          "id": "standard",
+          "name": "Standard Room",
+          "price_per_night": null,
+          "max_guests": 2
+        },
+        {
+          "id": "deluxe",
+          "name": "Deluxe Room",
+          "price_per_night": null,
+          "max_guests": 2
+        },
+        {
+          "id": "suite",
+          "name": "Suite",
+          "price_per_night": null,
+          "max_guests": 4
+        }
+      ],
+      "availability_note": "Harga dan ketersediaan dikonfirmasi sebelum pembayaran."
+    },
+    {
+      "id": 23,
+      "name": "Four Points by Sheraton Surabaya, Tunjungan Plaza",
+      "city": "Surabaya",
+      "province": "Jawa Timur",
+      "group": "Marriott",
+      "official_url": "https://www.marriott.com/en-us/hotel-sitemap/indonesia-hotel-sitemap",
+      "image": "https://images.unsplash.com/photo-1601918774946-25832a4be0d6?auto=format&fit=crop&w=1200&q=85",
+      "rooms": [
+        {
+          "id": "standard",
+          "name": "Standard Room",
+          "price_per_night": null,
+          "max_guests": 2
+        },
+        {
+          "id": "deluxe",
+          "name": "Deluxe Room",
+          "price_per_night": null,
+          "max_guests": 2
+        },
+        {
+          "id": "suite",
+          "name": "Suite",
+          "price_per_night": null,
+          "max_guests": 4
+        }
+      ],
+      "availability_note": "Harga dan ketersediaan dikonfirmasi sebelum pembayaran."
+    },
+    {
+      "id": 24,
+      "name": "Moxy Bandung",
+      "city": "Bandung",
+      "province": "Jawa Barat",
+      "group": "Marriott",
+      "official_url": "https://www.marriott.com/en-us/hotel-sitemap/indonesia-hotel-sitemap",
+      "image": "https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=1200&q=85",
+      "rooms": [
+        {
+          "id": "standard",
+          "name": "Standard Room",
+          "price_per_night": null,
+          "max_guests": 2
+        },
+        {
+          "id": "deluxe",
+          "name": "Deluxe Room",
+          "price_per_night": null,
+          "max_guests": 2
+        },
+        {
+          "id": "suite",
+          "name": "Suite",
+          "price_per_night": null,
+          "max_guests": 4
+        }
+      ],
+      "availability_note": "Harga dan ketersediaan dikonfirmasi sebelum pembayaran."
+    },
+    {
+      "id": 25,
+      "name": "Moxy Solo",
+      "city": "Solo",
+      "province": "Jawa Tengah",
+      "group": "Marriott",
+      "official_url": "https://www.marriott.com/en-us/hotel-sitemap/indonesia-hotel-sitemap",
+      "image": "https://images.unsplash.com/photo-1584132967334-10e028bd69f7?auto=format&fit=crop&w=1200&q=85",
+      "rooms": [
+        {
+          "id": "standard",
+          "name": "Standard Room",
+          "price_per_night": null,
+          "max_guests": 2
+        },
+        {
+          "id": "deluxe",
+          "name": "Deluxe Room",
+          "price_per_night": null,
+          "max_guests": 2
+        },
+        {
+          "id": "suite",
+          "name": "Suite",
+          "price_per_night": null,
+          "max_guests": 4
+        }
+      ],
+      "availability_note": "Harga dan ketersediaan dikonfirmasi sebelum pembayaran."
+    },
+    {
+      "id": 26,
+      "name": "InterContinental Residence Jakarta Pondok Indah",
+      "city": "Jakarta",
+      "province": "DKI Jakarta",
+      "group": "IHG",
+      "official_url": "https://www.ihg.com/id/indonesia",
+      "image": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1200&q=85",
+      "rooms": [
+        {
+          "id": "standard",
+          "name": "Standard Room",
+          "price_per_night": null,
+          "max_guests": 2
+        },
+        {
+          "id": "deluxe",
+          "name": "Deluxe Room",
+          "price_per_night": null,
+          "max_guests": 2
+        },
+        {
+          "id": "suite",
+          "name": "Suite",
+          "price_per_night": null,
+          "max_guests": 4
+        }
+      ],
+      "availability_note": "Harga dan ketersediaan dikonfirmasi sebelum pembayaran."
+    },
+    {
+      "id": 27,
+      "name": "InterContinental Jakarta Pondok Indah",
+      "city": "Jakarta",
+      "province": "DKI Jakarta",
+      "group": "IHG",
+      "official_url": "https://www.ihg.com/id/indonesia",
+      "image": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1200&q=85",
+      "rooms": [
+        {
+          "id": "standard",
+          "name": "Standard Room",
+          "price_per_night": null,
+          "max_guests": 2
+        },
+        {
+          "id": "deluxe",
+          "name": "Deluxe Room",
+          "price_per_night": null,
+          "max_guests": 2
+        },
+        {
+          "id": "suite",
+          "name": "Suite",
+          "price_per_night": null,
+          "max_guests": 4
+        }
+      ],
+      "availability_note": "Harga dan ketersediaan dikonfirmasi sebelum pembayaran."
+    },
+    {
+      "id": 28,
+      "name": "Holiday Inn Express Bandung Braga",
+      "city": "Bandung",
+      "province": "Jawa Barat",
+      "group": "IHG",
+      "official_url": "https://www.ihg.com/id/indonesia",
+      "image": "https://images.unsplash.com/photo-1564501049412-61c2a3083791?auto=format&fit=crop&w=1200&q=85",
+      "rooms": [
+        {
+          "id": "standard",
+          "name": "Standard Room",
+          "price_per_night": null,
+          "max_guests": 2
+        },
+        {
+          "id": "deluxe",
+          "name": "Deluxe Room",
+          "price_per_night": null,
+          "max_guests": 2
+        },
+        {
+          "id": "suite",
+          "name": "Suite",
+          "price_per_night": null,
+          "max_guests": 4
+        }
+      ],
+      "availability_note": "Harga dan ketersediaan dikonfirmasi sebelum pembayaran."
+    },
+    {
+      "id": 29,
+      "name": "Holiday Inn Express & Suites Banjarmasin",
+      "city": "Banjarmasin",
+      "province": "Kalimantan Selatan",
+      "group": "IHG",
+      "official_url": "https://www.ihg.com/id/indonesia",
+      "image": "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=1200&q=85",
+      "rooms": [
+        {
+          "id": "standard",
+          "name": "Standard Room",
+          "price_per_night": null,
+          "max_guests": 2
+        },
+        {
+          "id": "deluxe",
+          "name": "Deluxe Room",
+          "price_per_night": null,
+          "max_guests": 2
+        },
+        {
+          "id": "suite",
+          "name": "Suite",
+          "price_per_night": null,
+          "max_guests": 4
+        }
+      ],
+      "availability_note": "Harga dan ketersediaan dikonfirmasi sebelum pembayaran."
+    },
+    {
+      "id": 30,
+      "name": "Hotel Indigo Bali Seminyak Beach",
+      "city": "Seminyak",
+      "province": "Bali",
+      "group": "IHG",
+      "official_url": "https://www.ihg.com/id/indonesia",
+      "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1200&q=85",
+      "rooms": [
+        {
+          "id": "standard",
+          "name": "Standard Room",
+          "price_per_night": null,
+          "max_guests": 2
+        },
+        {
+          "id": "deluxe",
+          "name": "Deluxe Room",
+          "price_per_night": null,
+          "max_guests": 2
+        },
+        {
+          "id": "suite",
+          "name": "Suite",
+          "price_per_night": null,
+          "max_guests": 4
+        }
+      ],
+      "availability_note": "Harga dan ketersediaan dikonfirmasi sebelum pembayaran."
+    },
+    {
+      "id": 31,
+      "name": "Holiday Inn Resort Bali Canggu",
+      "city": "Canggu",
+      "province": "Bali",
+      "group": "IHG",
+      "official_url": "https://www.ihg.com/id/indonesia",
+      "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=85",
+      "rooms": [
+        {
+          "id": "standard",
+          "name": "Standard Room",
+          "price_per_night": null,
+          "max_guests": 2
+        },
+        {
+          "id": "deluxe",
+          "name": "Deluxe Room",
+          "price_per_night": null,
+          "max_guests": 2
+        },
+        {
+          "id": "suite",
+          "name": "Suite",
+          "price_per_night": null,
+          "max_guests": 4
+        }
+      ],
+      "availability_note": "Harga dan ketersediaan dikonfirmasi sebelum pembayaran."
+    },
+    {
+      "id": 32,
+      "name": "Holiday Inn & Suites Jakarta Gajah Mada",
+      "city": "Jakarta",
+      "province": "DKI Jakarta",
+      "group": "IHG",
+      "official_url": "https://www.ihg.com/id/indonesia",
+      "image": "https://images.unsplash.com/photo-1601918774946-25832a4be0d6?auto=format&fit=crop&w=1200&q=85",
+      "rooms": [
+        {
+          "id": "standard",
+          "name": "Standard Room",
+          "price_per_night": null,
+          "max_guests": 2
+        },
+        {
+          "id": "deluxe",
+          "name": "Deluxe Room",
+          "price_per_night": null,
+          "max_guests": 2
+        },
+        {
+          "id": "suite",
+          "name": "Suite",
+          "price_per_night": null,
+          "max_guests": 4
+        }
+      ],
+      "availability_note": "Harga dan ketersediaan dikonfirmasi sebelum pembayaran."
+    },
+    {
+      "id": 33,
+      "name": "Holiday Inn Resort Batam",
+      "city": "Batam",
+      "province": "Kepulauan Riau",
+      "group": "IHG",
+      "official_url": "https://www.ihg.com/id/indonesia",
+      "image": "https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=1200&q=85",
+      "rooms": [
+        {
+          "id": "standard",
+          "name": "Standard Room",
+          "price_per_night": null,
+          "max_guests": 2
+        },
+        {
+          "id": "deluxe",
+          "name": "Deluxe Room",
+          "price_per_night": null,
+          "max_guests": 2
+        },
+        {
+          "id": "suite",
+          "name": "Suite",
+          "price_per_night": null,
+          "max_guests": 4
+        }
+      ],
+      "availability_note": "Harga dan ketersediaan dikonfirmasi sebelum pembayaran."
+    },
+    {
+      "id": 34,
+      "name": "Holiday Inn Express Bali Sunset Road",
+      "city": "Kuta",
+      "province": "Bali",
+      "group": "IHG",
+      "official_url": "https://www.ihg.com/id/indonesia",
+      "image": "https://images.unsplash.com/photo-1584132967334-10e028bd69f7?auto=format&fit=crop&w=1200&q=85",
+      "rooms": [
+        {
+          "id": "standard",
+          "name": "Standard Room",
+          "price_per_night": null,
+          "max_guests": 2
+        },
+        {
+          "id": "deluxe",
+          "name": "Deluxe Room",
+          "price_per_night": null,
+          "max_guests": 2
+        },
+        {
+          "id": "suite",
+          "name": "Suite",
+          "price_per_night": null,
+          "max_guests": 4
+        }
+      ],
+      "availability_note": "Harga dan ketersediaan dikonfirmasi sebelum pembayaran."
+    },
+    {
+      "id": 35,
+      "name": "voco Bali Seminyak",
+      "city": "Seminyak",
+      "province": "Bali",
+      "group": "IHG",
+      "official_url": "https://www.ihg.com/id/indonesia",
+      "image": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1200&q=85",
+      "rooms": [
+        {
+          "id": "standard",
+          "name": "Standard Room",
+          "price_per_night": null,
+          "max_guests": 2
+        },
+        {
+          "id": "deluxe",
+          "name": "Deluxe Room",
+          "price_per_night": null,
+          "max_guests": 2
+        },
+        {
+          "id": "suite",
+          "name": "Suite",
+          "price_per_night": null,
+          "max_guests": 4
+        }
+      ],
+      "availability_note": "Harga dan ketersediaan dikonfirmasi sebelum pembayaran."
+    },
+    {
+      "id": 36,
+      "name": "InterContinental Bali Sanur Resort",
+      "city": "Sanur",
+      "province": "Bali",
+      "group": "IHG",
+      "official_url": "https://www.ihg.com/id/indonesia",
+      "image": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1200&q=85",
+      "rooms": [
+        {
+          "id": "standard",
+          "name": "Standard Room",
+          "price_per_night": null,
+          "max_guests": 2
+        },
+        {
+          "id": "deluxe",
+          "name": "Deluxe Room",
+          "price_per_night": null,
+          "max_guests": 2
+        },
+        {
+          "id": "suite",
+          "name": "Suite",
+          "price_per_night": null,
+          "max_guests": 4
+        }
+      ],
+      "availability_note": "Harga dan ketersediaan dikonfirmasi sebelum pembayaran."
+    },
+    {
+      "id": 37,
+      "name": "Crowne Plaza Labuan Bajo",
+      "city": "Labuan Bajo",
+      "province": "Nusa Tenggara Timur",
+      "group": "IHG",
+      "official_url": "https://www.ihg.com/id/indonesia",
+      "image": "https://images.unsplash.com/photo-1564501049412-61c2a3083791?auto=format&fit=crop&w=1200&q=85",
+      "rooms": [
+        {
+          "id": "standard",
+          "name": "Standard Room",
+          "price_per_night": null,
+          "max_guests": 2
+        },
+        {
+          "id": "deluxe",
+          "name": "Deluxe Room",
+          "price_per_night": null,
+          "max_guests": 2
+        },
+        {
+          "id": "suite",
+          "name": "Suite",
+          "price_per_night": null,
+          "max_guests": 4
+        }
+      ],
+      "availability_note": "Harga dan ketersediaan dikonfirmasi sebelum pembayaran."
+    },
+    {
+      "id": 38,
+      "name": "Rumah Luwih Bali",
+      "city": "Gianyar",
+      "province": "Bali",
+      "group": "IHG",
+      "official_url": "https://www.ihg.com/id/indonesia",
+      "image": "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=1200&q=85",
+      "rooms": [
+        {
+          "id": "standard",
+          "name": "Standard Room",
+          "price_per_night": null,
+          "max_guests": 2
+        },
+        {
+          "id": "deluxe",
+          "name": "Deluxe Room",
+          "price_per_night": null,
+          "max_guests": 2
+        },
+        {
+          "id": "suite",
+          "name": "Suite",
+          "price_per_night": null,
+          "max_guests": 4
+        }
+      ],
+      "availability_note": "Harga dan ketersediaan dikonfirmasi sebelum pembayaran."
+    },
+    {
+      "id": 39,
+      "name": "Regent Bali Canggu",
+      "city": "Canggu",
+      "province": "Bali",
+      "group": "IHG",
+      "official_url": "https://www.ihg.com/id/indonesia",
+      "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1200&q=85",
+      "rooms": [
+        {
+          "id": "standard",
+          "name": "Standard Room",
+          "price_per_night": null,
+          "max_guests": 2
+        },
+        {
+          "id": "deluxe",
+          "name": "Deluxe Room",
+          "price_per_night": null,
+          "max_guests": 2
+        },
+        {
+          "id": "suite",
+          "name": "Suite",
+          "price_per_night": null,
+          "max_guests": 4
+        }
+      ],
+      "availability_note": "Harga dan ketersediaan dikonfirmasi sebelum pembayaran."
+    }
+  ]
+}
