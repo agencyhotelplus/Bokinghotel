@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="BookingHotel - Temukan hotel terbaik dan pesan kamar dengan mudah.">
+<title>BookingHotel — Temukan Hotel Terbaik</title>
+<style>
+:root{--primary:#1769ff;--primary2:#0d47c9;--dark:#132238;--muted:#6b778c;--bg:#f5f7fb;--card:#fff;--border:#e6eaf0;--success:#159447;--danger:#d63b3b;--shadow:0 12px 35px rgba(25,45,80,.09)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--dark);background:var(--bg)}button,input,select{font:inherit}button{cursor:pointer;border:0}.container{width:min(1180px,92%);margin:auto}
+header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.96);backdrop-filter:blur(10px);border-bottom:1px solid var(--border)}.nav{height:68px;display:flex;align-items:center;justify-content:space-between}.logo{font-size:23px;font-weight:900;color:var(--primary);letter-spacing:-.6px}.logo span{color:var(--dark)}.navlinks{display:flex;gap:25px;align-items:center}.navlinks a{color:var(--dark);text-decoration:none;font-weight:650;font-size:14px}.navlinks a:hover{color:var(--primary)}.menu{display:none;background:none;font-size:25px}
+.hero{padding:54px 0 105px;background:linear-gradient(120deg,#071d43,#1769ff 58%,#5aa7ff);color:white}.hero h1{font-size:clamp(35px,6vw,62px);line-height:1.03;margin:18px 0 13px;letter-spacing:-2px}.hero p{font-size:18px;opacity:.9;max-width:620px}.searchbox{margin-top:35px;background:#fff;border-radius:18px;padding:10px;display:grid;grid-template-columns:1.35fr 1fr 1fr .85fr auto;gap:8px;box-shadow:0 18px 45px rgba(0,0,0,.2);color:var(--dark)}.field{padding:10px 12px;border-right:1px solid var(--border)}.field label{display:block;font-size:11px;font-weight:800;text-transform:uppercase;color:var(--muted);margin-bottom:4px}.field input,.field select{border:0;outline:0;width:100%;font-weight:650;background:transparent;color:var(--dark)}.searchbtn,.primary{background:var(--primary);color:white;border-radius:12px;padding:14px 22px;font-weight:800}.searchbtn:hover,.primary:hover{background:var(--primary2)}
+.section{padding:62px 0}.sectionhead{display:flex;justify-content:space-between;align-items:end;margin-bottom:25px}.section h2{margin:0;font-size:30px;letter-spacing:-.8px}.muted{color:var(--muted)}.chips{display:flex;gap:9px;flex-wrap:wrap}.chip{padding:9px 15px;border:1px solid var(--border);background:#fff;border-radius:999px;font-weight:700;color:#48566b}.chip.active,.chip:hover{background:#eaf1ff;color:var(--primary);border-color:#cfe0ff}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.card{background:var(--card);border:1px solid var(--border);border-radius:17px;overflow:hidden;box-shadow:var(--shadow)}.hotelimg{height:210px;position:relative;background:#dce8f9}.hotelimg img{width:100%;height:100%;object-fit:cover;display:block}.badge{position:absolute;top:13px;left:13px;background:#fff;padding:6px 9px;border-radius:8px;font-size:12px;font-weight:900;color:var(--primary)}.cardbody{padding:17px}.rating{display:inline-flex;align-items:center;gap:5px;background:#eaf7ef;color:#14783d;padding:5px 8px;border-radius:7px;font-size:12px;font-weight:850}.hotelname{font-size:19px;font-weight:850;margin:11px 0 5px}.location{font-size:13px;color:var(--muted)}.amenities{display:flex;gap:7px;flex-wrap:wrap;margin:13px 0}.amenity{font-size:11px;background:#f2f5f9;padding:6px 8px;border-radius:6px;color:#526074}.price{font-size:20px;font-weight:900}.price small{font-size:12px;color:var(--muted);font-weight:500}.cardfoot{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:15px}.outline{background:white;border:1px solid #ccd5e3;color:var(--dark);border-radius:10px;padding:10px 14px;font-weight:750}.outline:hover{border-color:var(--primary);color:var(--primary)}
+.features{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}.feature{background:#fff;border:1px solid var(--border);padding:24px;border-radius:15px}.icon{font-size:28px}.feature h3{margin:13px 0 6px;font-size:16px}.feature p{font-size:13px;color:var(--muted);line-height:1.55;margin:0}
+.deals{background:#0e2345;color:white}.deals .muted{color:#c3cee0}.dealgrid{display:grid;grid-template-columns:1fr 1fr;gap:20px}.deal{border-radius:17px;min-height:190px;padding:27px;display:flex;flex-direction:column;justify-content:end;background:linear-gradient(130deg,#1769ff,#06275f)}.deal:nth-child(2){background:linear-gradient(130deg,#8b4dff,#32106f)}.deal h3{font-size:24px;margin:0 0 5px}.deal p{margin:0;color:#dfe8ff}.deal button{margin-top:17px;width:max-content;background:#fff;color:#143a86;padding:10px 15px;border-radius:9px;font-weight:800}
+.empty{grid-column:1/-1;text-align:center;padding:45px;background:#fff;border:1px dashed #ccd5e3;border-radius:15px}.sort{display:flex;align-items:center;gap:8px}.sort select{padding:9px 12px;border:1px solid var(--border);border-radius:9px;background:#fff}
+footer{background:#09172d;color:#d7e0ee;padding:45px 0 25px}.footergrid{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:30px}.footergrid h3{color:white}.footergrid a{display:block;color:#b9c5d8;text-decoration:none;margin:9px 0;font-size:14px}.copy{border-top:1px solid #26364f;margin-top:30px;padding-top:20px;font-size:12px;color:#9aa9bf}
+.modal{display:none;position:fixed;inset:0;background:rgba(3,13,29,.68);z-index:100;padding:20px;overflow:auto}.modal.show{display:flex;align-items:center;justify-content:center}.modalbox{width:min(760px,100%);background:#fff;border-radius:18px;max-height:92vh;overflow:auto}.modalhead{padding:19px 22px;border-bottom:1px solid var(--border);display:flex;justify-content:space-between;align-items:center}.close{background:#eef2f7;border-radius:50%;width:34px;height:34px;font-size:20px}.modalbody{padding:22px}.detailtop{display:grid;grid-template-columns:1fr 1fr;gap:20px}.detailtop img{width:100%;height:230px;object-fit:cover;border-radius:12px}.room{border:1px solid var(--border);border-radius:12px;padding:15px;margin-top:12px;display:flex;justify-content:space-between;gap:15px;align-items:center}.formgrid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.formgroup{margin-bottom:12px}.formgroup label{display:block;font-size:12px;font-weight:800;margin-bottom:6px}.formgroup input,.formgroup select{width:100%;padding:12px;border:1px solid #d6deea;border-radius:9px;outline:none}.total{background:#f5f8fc;border-radius:12px;padding:15px;margin:15px 0}.totalrow{display:flex;justify-content:space-between;margin:7px 0}.totalrow.final{font-size:19px;font-weight:900;border-top:1px solid #d9e0e9;padding-top:10px;margin-top:12px}.success{text-align:center;padding:35px}.success .check{font-size:52px}.code{font-size:24px;font-weight:900;letter-spacing:2px;background:#edf4ff;color:var(--primary);display:inline-block;padding:10px 15px;border-radius:9px;margin:12px}
+.toast{position:fixed;bottom:22px;right:22px;background:#132238;color:#fff;padding:13px 17px;border-radius:10px;display:none;z-index:200;box-shadow:var(--shadow)}.toast.show{display:block}
+@media(max-width:900px){.grid{grid-template-columns:repeat(2,1fr)}.features{grid-template-columns:repeat(2,1fr)}.searchbox{grid-template-columns:1fr 1fr}.searchbtn{width:100%}.field{border-right:0;border-bottom:1px solid var(--border)}}
+@media(max-width:650px){.navlinks{display:none}.menu{display:block}.hero{padding:35px 0 75px}.hero p{font-size:15px}.searchbox{grid-template-columns:1fr;padding:8px}.field{border-bottom:1px solid var(--border);padding:11px}.grid,.features,.dealgrid,.footergrid,.detailtop,.formgrid{grid-template-columns:1fr}.section{padding:43px 0}.section h2{font-size:25px}.hotelimg{height:190px}.sectionhead{align-items:start;gap:12px;flex-direction:column}.sort{width:100%}.sort select{flex:1}.modal{padding:8px}.modalbox{border-radius:14px}.cardfoot{align-items:stretch;flex-direction:column}.cardfoot button{width:100%}}
+</style>
+</head>
+<body>
+<header><div class="container nav">
+  <a href="#" class="logo">Booking<span>Hotel</span></a>
+  <nav class="navlinks"><a href="#hotel">Hotel</a><a href="#promo">Promo</a><a href="#keunggulan">Keunggulan</a><a href="#pesanan">Pesanan</a></nav>
+  <button class="menu" onclick="scrollToSection('hotel')">☰</button>
+</div></header>
+
+<section class="hero"><div class="container">
+  <div style="font-weight:800;opacity:.9">✦ Hotel pilihan untuk perjalanan Anda</div>
+  <h1>Temukan tempat menginap yang tepat.</h1>
+  <p>Cari hotel, bandingkan kamar, lalu booking dengan proses yang sederhana dan transparan.</p>
+  <div class="searchbox">
+    <div class="field"><label>Tujuan</label><input id="destination" placeholder="Kota atau nama hotel"></div>
+    <div class="field"><label>Check-in</label><input id="checkin" type="date"></div>
+    <div class="field"><label>Check-out</label><input id="checkout" type="date"></div>
+    <div class="field"><label>Tamu</label><select id="guests"><option>1 tamu, 1 kamar</option><option>2 tamu, 1 kamar</option><option>3 tamu, 1 kamar</option><option>4 tamu, 2 kamar</option><option>5 tamu, 2 kamar</option><option>6 tamu, 2 kamar</option></select></div>
+    <button class="searchbtn" onclick="searchHotels()">Cari Hotel</button>
+  </div>
+</div></section>
+
+<section class="section" id="hotel"><div class="container">
+  <div class="sectionhead"><div><h2>Hotel pilihan</h2><div class="muted">Pilihan populer untuk perjalanan Anda</div></div>
+    <div class="sort">Urutkan <select id="sort" onchange="renderHotels()"><option value="recommended">Rekomendasi</option><option value="low">Harga terendah</option><option value="high">Harga tertinggi</option><option value="rating">Rating tertinggi</option></select></div>
+  </div>
+  <div class="chips" style="margin-bottom:22px"><button class="chip active" onclick="filterCity('Semua',this)">Semua</button><button class="chip" onclick="filterCity('Jakarta',this)">Jakarta</button><button class="chip" onclick="filterCity('Bandung',this)">Bandung</button><button class="chip" onclick="filterCity('Bali',this)">Bali</button><button class="chip" onclick="filterCity('Yogyakarta',this)">Yogyakarta</button></div>
+  <div id="hotelGrid" class="grid"></div>
+</div></section>
+
+<section class="section" id="keunggulan"><div class="container">
+  <div class="sectionhead"><div><h2>Kenapa BookingHotel?</h2><div class="muted">Dibuat untuk pengalaman booking yang lebih sederhana.</div></div></div>
+  <div class="features">
+    <div class="feature"><div class="icon">🔎</div><h3>Pencarian mudah</h3><p>Temukan hotel berdasarkan tujuan dan kebutuhan Anda.</p></div>
+    <div class="feature"><div class="icon">💳</div><h3>Harga transparan</h3><p>Lihat perhitungan harga sebelum menyelesaikan pesanan.</p></div>
+    <div class="feature"><div class="icon">🛏️</div><h3>Pilihan kamar</h3><p>Bandingkan tipe kamar dan fasilitas dalam satu tempat.</p></div>
+    <div class="feature"><div class="icon">📱</div><h3>Mobile friendly</h3><p>Nyaman digunakan melalui ponsel maupun desktop.</p></div>
+  </div>
+</div></section>
+
+<section class="section deals" id="promo"><div class="container">
+  <div class="sectionhead"><div><h2>Promo BookingHotel</h2><div class="muted">Penawaran contoh yang dapat Anda sesuaikan.</div></div></div>
+  <div class="dealgrid">
+    <div class="deal"><h3>Hemat hingga 20%</h3><p>Untuk pilihan hotel tertentu.</p><button onclick="showToast('Promo berhasil dipilih')">Gunakan Promo</button></div>
+    <div class="deal"><h3>Staycation Weekend</h3><p>Jadikan akhir pekan lebih nyaman.</p><button onclick="showToast('Promo berhasil dipilih')">Lihat Penawaran</button></div>
+  </div>
+</div></section>
+
+<section class="section" id="pesanan"><div class="container">
+  <div class="sectionhead"><div><h2>Cek Pesanan</h2><div class="muted">Masukkan kode booking untuk melihat pesanan di perangkat ini.</div></div></div>
+  <div class="card" style="padding:20px;max-width:650px"><div class="formgrid"><div class="formgroup"><label>Kode booking</label><input id="lookupCode" placeholder="Contoh: BH-8F4K2Q"></div><div style="display:flex;align-items:end"><button class="primary" style="width:100%" onclick="lookupBooking()">Cek Pesanan</button></div></div><div id="lookupResult"></div></div>
+</div></section>
+
+<footer><div class="container">
+ <div class="footergrid"><div><div class="logo" style="color:#5aa7ff">Booking<span style="color:#fff">Hotel</span></div><p style="line-height:1.6;color:#9eacc1">Platform booking hotel modern yang membantu Anda menemukan tempat menginap dengan mudah.</p></div>
+ <div><h3>Layanan</h3><a href="#hotel">Cari Hotel</a><a href="#promo">Promo</a><a href="#pesanan">Cek Pesanan</a></div>
+ <div><h3>Informasi</h3><a href="#">Tentang Kami</a><a href="#">Kebijakan Privasi</a><a href="#">Syarat & Ketentuan</a></div></div>
+ <div class="copy">© <span id="year"></span> BookingHotel. Semua hak dilindungi.</div>
+</div></footer>
+
+<div id="detailModal" class="modal"><div class="modalbox"><div class="modalhead"><strong id="modalTitle">Detail Hotel</strong><button class="close" onclick="closeModal('detailModal')">×</button></div><div class="modalbody" id="detailBody"></div></div></div>
+<div id="bookingModal" class="modal"><div class="modalbox"><div class="modalhead"><strong>Booking Kamar</strong><button class="close" onclick="closeModal('bookingModal')">×</button></div><div class="modalbody" id="bookingBody"></div></div></div>
+<div id="toast" class="toast"></div>
+
+<script>
+const hotels=[
+{id:1,name:"Grand Aruna Hotel Jakarta",city:"Jakarta",area:"Jakarta Pusat",rating:4.8,reviews:1240,price:650000,img:"https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1000&q=80",amen:["WiFi Gratis","Kolam Renang","Sarapan"],desc:"Hotel modern di pusat kota dengan akses mudah ke area bisnis, kuliner, dan pusat perbelanjaan.",rooms:[["Deluxe Room",650000],["Executive Room",900000],["Suite",1250000]]},
+{id:2,name:"Sagara Resort Bandung",city:"Bandung",area:"Dago",rating:4.7,reviews:876,price:575000,img:"https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=1000&q=80",amen:["WiFi Gratis","Parkir","Sarapan"],desc:"Resort nyaman dengan suasana sejuk Bandung, cocok untuk keluarga maupun pasangan.",rooms:[["Superior Room",575000],["Deluxe Room",750000],["Family Room",1050000]]},
+{id:3,name:"Nusa Indah Beach Hotel",city:"Bali",area:"Kuta",rating:4.9,reviews:2150,price:850000,img:"https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1000&q=80",amen:["Beach Access","Pool","WiFi Gratis"],desc:"Penginapan dekat pantai dengan fasilitas lengkap untuk liburan santai di Bali.",rooms:[["Garden Room",850000],["Ocean View",1200000],["Private Villa",2100000]]},
+{id:4,name:"Malioboro City Stay",city:"Yogyakarta",area:"Malioboro",rating:4.6,reviews:632,price:420000,img:"https://images.unsplash.com/photo-1564501049412-61c2a3083791?auto=format&fit=crop&w=1000&q=80",amen:["WiFi Gratis","AC","24 Jam"],desc:"Pilihan praktis di area strategis untuk menjelajah Malioboro dan destinasi Yogyakarta.",rooms:[["Standard Room",420000],["Deluxe Room",550000],["Family Room",800000]]},
+{id:5,name:"Menteng Urban Hotel",city:"Jakarta",area:"Menteng",rating:4.5,reviews:489,price:520000,img:"https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=1000&q=80",amen:["WiFi Gratis","Gym","Parkir"],desc:"Hotel urban dengan desain modern dan lokasi strategis di kawasan Menteng.",rooms:[["Smart Room",520000],["Deluxe Room",700000],["Premier Room",950000]]},
+{id:6,name:"Lembah Dago Retreat",city:"Bandung",area:"Lembang",rating:4.8,reviews:731,price:780000,img:"https://images.unsplash.com/photo-1601918774946-25832a4be0d6?auto=format&fit=crop&w=1000&q=80",amen:["Mountain View","Pool","Sarapan"],desc:"Tempat menginap tenang dengan pemandangan alam dan udara sejuk.",rooms:[["Valley Room",780000],["Mountain Suite",1100000],["Family Villa",1600000]]}
+];
+let activeCity="Semua", filtered=[...hotels], selectedHotel=null, selectedRoom=null;
+
+const rupiah=n=>new Intl.NumberFormat("id-ID",{style:"currency",currency:"IDR",maximumFractionDigits:0}).format(n);
+function renderHotels(){
+ let data=[...filtered], s=document.getElementById("sort").value;
+ if(s==="low")data.sort((a,b)=>a.price-b.price); if(s==="high")data.sort((a,b)=>b.price-a.price); if(s==="rating")data.sort((a,b)=>b.rating-a.rating);
+ const grid=document.getElementById("hotelGrid");
+ if(!data.length){grid.innerHTML='<div class="empty"><h3>Hotel tidak ditemukan</h3><p class="muted">Coba ubah tujuan atau filter pencarian.</p></div>';return}
+ grid.innerHTML=data.map(h=>`<article class="card"><div class="hotelimg"><img src="${h.img}" alt="${h.name}" loading="lazy"><span class="badge">Pilihan populer</span></div><div class="cardbody"><span class="rating">★ ${h.rating} <span style="font-weight:500">(${h.reviews})</span></span><div class="hotelname">${h.name}</div><div class="location">📍 ${h.area}, ${h.city}</div><div class="amenities">${h.amen.map(x=>`<span class="amenity">${x}</span>`).join("")}</div><div class="cardfoot"><div><div class="price">${rupiah(h.price)} <small>/ malam</small></div></div><button class="primary" onclick="openDetail(${h.id})">Lihat Hotel</button></div></div></article>`).join("");
+}
+function filterCity(city,el){activeCity=city;document.querySelectorAll(".chip").forEach(x=>x.classList.remove("active"));el.classList.add("active");filtered=city==="Semua"?[...hotels]:hotels.filter(h=>h.city===city);renderHotels()}
+function searchHotels(){
+ const q=document.getElementById("destination").value.trim().toLowerCase();
+ const ci=document.getElementById("checkin").value, co=document.getElementById("checkout").value;
+ if(ci&&co&&new Date(co)<=new Date(ci)){showToast("Tanggal check-out harus setelah check-in");return}
+ filtered=hotels.filter(h=>!q||(h.name+" "+h.city+" "+h.area).toLowerCase().includes(q));activeCity="Pencarian";
+ document.querySelectorAll(".chip").forEach(x=>x.classList.remove("active"));renderHotels();scrollToSection("hotel");
+ showToast(filtered.length+" hotel ditemukan");
+}
+function openDetail(id){
+ selectedHotel=hotels.find(h=>h.id===id);
+ document.getElementById("modalTitle").textContent=selectedHotel.name;
+ document.getElementById("detailBody").innerHTML=`<div class="detailtop"><div><img src="${selectedHotel.img}" alt="${selectedHotel.name}"></div><div><span class="rating">★ ${selectedHotel.rating} · ${selectedHotel.reviews} ulasan</span><h2 style="margin:10px 0 5px">${selectedHotel.name}</h2><div class="location">📍 ${selectedHotel.area}, ${selectedHotel.city}</div><p class="muted" style="line-height:1.6">${selectedHotel.desc}</p><div class="amenities">${selectedHotel.amen.map(x=>`<span class="amenity">${x}</span>`).join("")}</div></div></div><h3 style="margin-top:25px">Pilih kamar</h3>${selectedHotel.rooms.map((r,i)=>`<div class="room"><div><strong>${r[0]}</strong><div class="muted" style="font-size:12px;margin-top:4px">✓ Termasuk fasilitas standar · ✓ Bisa dipesan online</div></div><div style="text-align:right"><div class="price">${rupiah(r[1])}<small>/malam</small></div><button class="primary" style="margin-top:7px" onclick="startBooking(${selectedHotel.id},${i})">Pesan</button></div></div>`).join("")}`;
+ document.getElementById("detailModal").classList.add("show");
+}
+function startBooking(hid,ri){selectedHotel=hotels.find(h=>h.id===hid);selectedRoom=selectedHotel.rooms[ri];closeModal("detailModal");renderBookingForm();document.getElementById("bookingModal").classList.add("show")}
+function renderBookingForm(){
+ let ci=document.getElementById("checkin").value,co=document.getElementById("checkout").value;
+ const today=new Date();today.setHours(0,0,0,0);const tomorrow=new Date(today);tomorrow.setDate(today.getDate()+1);
+ if(!ci)ci=tomorrow.toISOString().slice(0,10); if(!co){let d=new Date(ci+"T00:00:00");d.setDate(d.getDate()+1);co=d.toISOString().slice(0,10)}
+ const nights=Math.max(1,Math.round((new Date(co)-new Date(ci))/86400000));
+ const subtotal=selectedRoom[1]*nights,fee=Math.round(subtotal*.1),total=subtotal+fee;
+ document.getElementById("bookingBody").innerHTML=`<div style="background:#f5f8fc;padding:14px;border-radius:11px;margin-bottom:17px"><strong>${selectedHotel.name}</strong><div class="muted">${selectedRoom[0]} · ${nights} malam</div></div><div class="formgrid"><div class="formgroup"><label>Nama lengkap</label><input id="guestName" placeholder="Nama sesuai identitas"></div><div class="formgroup"><label>No. WhatsApp</label><input id="guestPhone" placeholder="08xxxxxxxxxx" inputmode="tel"></div></div><div class="formgrid"><div class="formgroup"><label>Check-in</label><input id="bookIn" type="date" value="${ci}"></div><div class="formgroup"><label>Check-out</label><input id="bookOut" type="date" value="${co}"></div></div><div class="formgroup"><label>Permintaan khusus (opsional)</label><input id="special" placeholder="Contoh: kamar non-smoking"></div><div class="total"><div class="totalrow"><span>${rupiah(selectedRoom[1])} × ${nights} malam</span><strong>${rupiah(subtotal)}</strong></div><div class="totalrow"><span>Biaya layanan (10%)</span><strong>${rupiah(fee)}</strong></div><div class="totalrow final"><span>Total</span><strong>${rupiah(total)}</strong></div></div><button class="primary" style="width:100%" onclick="confirmBooking(${nights},${total})">Konfirmasi Booking</button><p class="muted" style="font-size:11px;text-align:center">Demo frontend: belum terhubung ke payment gateway/database.</p>`;
+}
+function confirmBooking(nights,total){
+ const name=document.getElementById("guestName").value.trim(),phone=document.getElementById("guestPhone").value.trim(),ci=document.getElementById("bookIn").value,co=document.getElementById("bookOut").value;
+ if(!name||!phone||!ci||!co){showToast("Lengkapi data booking terlebih dahulu");return}
+ if(new Date(co)<=new Date(ci)){showToast("Tanggal check-out tidak valid");return}
+ const code="BH-"+Math.random().toString(36).substring(2,8).toUpperCase();
+ const booking={code,name,phone,hotel:selectedHotel.name,room:selectedRoom[0],checkin:ci,checkout:co,total,created:new Date().toISOString()};
+ localStorage.setItem("booking_"+code,JSON.stringify(booking));
+ document.getElementById("bookingBody").innerHTML=`<div class="success"><div class="check">✓</div><h2>Booking berhasil dibuat</h2><p class="muted">Simpan kode booking berikut untuk pengecekan pesanan.</p><div class="code">${code}</div><div class="card" style="padding:15px;text-align:left;margin:15px 0"><div><b>${booking.hotel}</b></div><div class="muted">${booking.room}</div><div style="margin-top:8px">Check-in: <b>${formatDate(ci)}</b><br>Check-out: <b>${formatDate(co)}</b><br>Total: <b>${rupiah(total)}</b></div></div><button class="primary" onclick="lookupBooking('${code}')">Lihat Pesanan</button></div>`;
+}
+function lookupBooking(codeArg){
+ const code=(codeArg||document.getElementById("lookupCode").value).trim().toUpperCase();
+ const box=document.getElementById("lookupResult"); if(!code){showToast("Masukkan kode booking");return}
+ const b=JSON.parse(localStorage.getItem("booking_"+code)||"null");
+ if(!b){box.innerHTML='<div style="margin-top:15px;padding:13px;background:#fff2f2;color:#a72e2e;border-radius:9px">Kode booking tidak ditemukan di perangkat ini.</div>';return}
+ box.innerHTML=`<div style="margin-top:15px;padding:16px;background:#eef8f1;border-radius:10px"><strong>${b.hotel}</strong><br>${b.room}<br><span class="muted">${formatDate(b.checkin)} — ${formatDate(b.checkout)}</span><hr style="border:0;border-top:1px solid #cfe4d6"><b>${b.code}</b> · ${rupiah(b.total)}</div>`;
+ scrollToSection("pesanan");
+}
+function formatDate(s){return new Date(s+"T00:00:00").toLocaleDateString("id-ID",{day:"2-digit",month:"short",year:"numeric"})}
+function closeModal(id){document.getElementById(id).classList.remove("show")}
+function scrollToSection(id){document.getElementById(id).scrollIntoView({behavior:"smooth"})}
+function showToast(msg){const t=document.getElementById("toast");t.textContent=msg;t.classList.add("show");clearTimeout(window.toastTimer);window.toastTimer=setTimeout(()=>t.classList.remove("show"),2500)}
+document.querySelectorAll(".modal").forEach(m=>m.addEventListener("click",e=>{if(e.target===m)m.classList.remove("show")}));
+document.getElementById("year").textContent=new Date().getFullYear();
+const now=new Date(); const ci=new Date(now);ci.setDate(now.getDate()+1);const co=new Date(now);co.setDate(now.getDate()+2);
+document.getElementById("checkin").min=ci.toISOString().slice(0,10);document.getElementById("checkout").min=co.toISOString().slice(0,10);document.getElementById("checkin").value=ci.toISOString().slice(0,10);document.getElementById("checkout").value=co.toISOString().slice(0,10);
+renderHotels();
+</script>
+</body>
+</html>
