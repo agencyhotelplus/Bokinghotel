@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>BookingHotelIndonesia</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="index.html"><span class="brand-icon">🏨</span> BookingHotelIndonesia</a>
+  <nav class="nav">
+    <a class="active" href="index.html">Beranda</a>
+    <a href="hotels.html">Hotel</a>
+    <a href="booking.html">Booking</a>
+    <a href="contact.html">Kontak</a>
+  </nav>
+  <a class="wa" href="https://wa.me/" target="_blank">WhatsApp</a>
+  <button class="menu-btn" aria-label="Menu">☰</button>
+</header>
+
+<main>
+<section class="hero">
+  <div class="hero-content">
+    <div class="eyebrow">BOOKING HOTEL INDONESIA</div>
+    <h1>Temukan hotel<br>untuk perjalananmu.</h1>
+    <p class="lead">Cari hotel, lihat detail, tentukan tanggal, lalu lanjutkan booking dengan mudah.</p>
+
+    <form class="search-panel" id="homeSearch">
+      <div class="field large"><label>Kota tujuan</label><input id="homeCity" type="text" placeholder="Mis. Jakarta"></div>
+      <div class="field"><label>Check-in</label><input id="homeCheckin" type="date"></div>
+      <div class="field"><label>Check-out</label><input id="homeCheckout" type="date"></div>
+      <div class="field small"><label>Tamu</label><select id="homeGuests"><option>1</option><option selected>2</option><option>3</option><option>4</option><option>5</option><option>6+</option></select></div>
+      <button class="search-btn" type="submit">🔎 Cari Hotel</button>
+    </form>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head">
+    <div><div class="eyebrow">PILIHAN TERBAIK</div><h2>Hotel tersedia</h2></div>
+    <a class="see-all" href="hotels.html">Lihat semua →</a>
+  </div>
+  <div id="featuredHotels" class="hotel-grid"></div>
+</section>
+</main>
+
+<footer>© <span id="year"></span> BookingHotelIndonesia</footer>
+<script src="script.js"></script>
+</body>
+</html>
