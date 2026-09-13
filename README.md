@@ -18,7 +18,7 @@ Pembayaran:
 OCBC NISP
 940810293248
 a.n. Winda Sintia
-WhatsApp: 085828781836
+WhatsApp: 089682892974
 
 PENTING:
 Harga kamar di hotels.json sengaja bernilai null agar tidak mengarang harga. Untuk menampilkan harga nyata, isi price_per_night dari data yang kamu punya/berizin atau hubungkan ke API/partner inventori hotel. Ketersediaan real-time juga membutuhkan API/partner.
