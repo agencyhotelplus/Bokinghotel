@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BookingHotel - Daftar Hotel</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="navbar">
+  <a class="logo" href="index.html">Booking<span>Hotel</span></a>
+  <nav>
+    <a href="index.html">Beranda</a>
+    <a class="active" href="hotels.html">Hotel</a>
+    <a href="booking.html">Booking</a>
+    <a href="contact.html">Kontak</a>
+  </nav>
+</header>
+
+<main class="page">
+  <section class="page-title">
+    <p class="eyebrow">PILIH HOTEL</p>
+    <h1>Temukan hotel yang kamu inginkan</h1>
+    <p>Cari berdasarkan nama atau kota.</p>
+  </section>
+
+  <section class="search-box">
+    <input id="hotelSearch" type="search" placeholder="Cari nama hotel atau kota...">
+    <select id="cityFilter">
+      <option value="">Semua kota</option>
+    </select>
+  </section>
+
+  <p id="hotelCount" class="muted"></p>
+  <div id="hotelList" class="hotel-grid"></div>
+</main>
+
+<footer>© <span id="year"></span> BookingHotel</footer>
+<script src="script.js"></script>
+</body>
+</html>
